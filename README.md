@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# React Forms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este projeto é uma aplicação em React focada na criação e validação de formulários dinâmicos. Ele demonstra as melhores práticas para construção de formulários reutilizáveis, gerenciamento de estado e integração com APIs, fornecendo uma base sólida para projetos que necessitam de entrada de dados de usuários de forma eficiente e confiável.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
 
-### `yarn start`
+- **React** (Create React App)
+- **TypeScript** (caso aplicável)
+- **React Hook Form** ou Formik para gerenciamento de formulários
+- **Yup** ou outra biblioteca de validação de esquemas
+- **Styled Components** ou CSS Modules (caso aplicável)
+- Integração com APIs REST (exemplo: ViaCEP, JSONPlaceholder, etc.)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Funcionalidades
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Criação de formulários dinâmicos com campos customizáveis
+- Validação de campos com mensagens de erro amigáveis
+- Máscara para campos como CPF, telefone e CEP
+- Submissão de dados para API e tratamento de respostas
+- Feedback visual de carregamento e sucesso/erro
+- Componentes reutilizáveis para inputs, selects e botões
 
-### `yarn test`
+## Como usar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone o repositório:**
+    ```bash
+    git clone https://github.com/fabiocberg/react-forms.git
+    cd react-forms
+    ```
 
-### `yarn build`
+2. **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Rode o app:**
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
+    O app estará disponível em `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Exemplo de uso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O formulário pode ser adaptado para diferentes cenários, como cadastro de usuários, login, ou consulta de informações externas:
 
-### `yarn eject`
+```plaintext
+Nome: [__________]
+E-mail: [__________]
+CPF: [___._ _ _.___-__]
+Telefone: [(__) _____-____]
+CEP: [_____ - ___]
+[Enviar]
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Ao preencher e submeter, os dados são validados, enviados para a API, e o usuário recebe feedback sobre o resultado da operação.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Estrutura de Pastas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+src/
+├── components/        # Componentes reutilizáveis de formulários
+├── forms/             # Configurações e schemas dos formulários
+├── services/          # Integração com APIs externas
+├── App.js             # Componente principal
+└── index.js           # Inicialização da aplicação
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Personalização
 
-## Learn More
+- Adicione/remova campos conforme a necessidade do seu caso de uso.
+- Integre com a API do seu sistema para persistência dos dados.
+- Adicione validações, máscaras e feedbacks visuais personalizados.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Este projeto serve como base para desenvolvimento de formulários modernos e eficientes em aplicações React.
